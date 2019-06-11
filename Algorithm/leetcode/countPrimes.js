@@ -3,28 +3,17 @@
  * @return {number}
  */
 var countPrimes = function (n) {
-    let total = 0
-    for (let i = 1; i <= n; i++) {
-        if (isPrime(i)) {
-            total += 1
-        }
-    }
-    function isPrime(v) {
-        if (v <= 3) {
-            return v > 1
-        }
-        if (v % 2 == 0 || v % 3 == 0) {
-            return false
-        }
-
-        for (let i = 5; i * i <= n; i += 6) {
-            if (n % i == 0 || n % (i + 2) == 0) {
-                return false;
+    let count = 0
+    let notPrime = []
+    for (let i = 2; i < n; i++) {
+        if (!notPrime[i]) {
+            count++ 
+            for (let j = 2; j * i < n; j++) {
+                notPrime[j * i] = true
             }
         }
-        return true;
     }
-    return total
-};
+    return count
+}
 
-console.log(countPrimes(101))
+console.log(countPrimes(10000))
