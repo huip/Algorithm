@@ -3,7 +3,6 @@
  */
 var Solution = function (nums) {
     this.nums = nums
-    this.result = Object.assign([], nums)
 };
 
 /**
@@ -19,12 +18,13 @@ Solution.prototype.reset = function () {
  * @return {number[]}
  */
 Solution.prototype.shuffle = function () {
-    let currentIndex = this.result.length
-    let arr = this.result
+    let currentIndex = this.nums.length
+    let arr = Object.assign([], this.nums)
     let temp
     let randomIndex
     while (currentIndex != 0) {
         randomIndex = Math.floor(Math.random() * currentIndex)
+        console.log(randomIndex)
         currentIndex -= 1
         temp = arr[currentIndex]
         arr[currentIndex] = arr[randomIndex]
@@ -32,6 +32,7 @@ Solution.prototype.shuffle = function () {
     }
     return arr
 };
+
 
 
 /** 
