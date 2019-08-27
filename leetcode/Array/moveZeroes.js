@@ -10,7 +10,6 @@ var moveZeroes = function (nums) {
             nums.push(num)
         }
     }
-    return nums
 }
 
 console.log(moveZeroes([0,0,1]))

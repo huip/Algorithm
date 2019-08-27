@@ -19,9 +19,7 @@ var reverseVowels = function (s) {
             if (vowelMap[s[j].toLowerCase()]) {
                 let temp = s[i]
                 s[i] = s[j]
-                console.log(s[j], temp)
                 s[j] = temp
-                console.log(s[j], temp)
                 i++
             }
             j--
