@@ -1,2 +1,2 @@
 # learning-notes
-Learning notes of IT knowledge
+Learning notes of algorithm knowledge

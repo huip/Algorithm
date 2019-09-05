@@ -39,7 +39,7 @@ MyQueue.prototype.pop = function () {
     let removeElement = this
         .stack1
         .pop()
-    if(this.stack1.length) {
+    if (this.stack1.length) {
         this.front = this.stack1[this.stack1.length - 1]
     }
     return removeElement
