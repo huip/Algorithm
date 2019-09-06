@@ -21,7 +21,7 @@
 // };
 
 
-// 对撞指针法
+// 对撞指针法 有序数组
 var twoSum = function (nums, target) {
     let len = nums.length
     let i = 0

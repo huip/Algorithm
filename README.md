@@ -1,2 +1,2 @@
-# learning-notes
-Learning notes of algorithm knowledge
+# Algorithm
+Learning notes of algorithm
