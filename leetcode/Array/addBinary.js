@@ -20,7 +20,6 @@ var addBinary = function (a, b) {
     answer += ca == 1
         ? ca
         : ''
-    console.log(answer.split(''))
     return answer
         .split('')
         .reverse()
