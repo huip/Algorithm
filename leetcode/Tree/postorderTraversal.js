@@ -9,15 +9,15 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var preorderTraversal = function (root) {
+var postorderTraversal = function (root) {
     let res = []
-    function preOrder(node) {
+    function postOrder(node) {
         if (node != null) {
+            postOrder(node.left)
+            postOrder(node.right)
             res.push(node.val)
-            preOrder(node.left)
-            preOrder(node.right)
         }
     }
-    preOrder(root)
+    postOrder(root)
     return res
 };
