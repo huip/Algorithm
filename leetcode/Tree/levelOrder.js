@@ -26,4 +26,5 @@ var levelOrder = function (root) {
         result.push(temp)
         q = tempQ
     }
+    return result
 }
