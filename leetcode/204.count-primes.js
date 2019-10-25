@@ -15,5 +15,3 @@ var countPrimes = function (n) {
     }
     return count
 }
-
-console.log(countPrimes(10000))
