@@ -26,5 +26,5 @@ var rob = function (nums) {
         }
         return Math.max(odd, even)
     }
-    return Math.max(helper(nums.slice(1, nums.length - 1)), nums.slice(0, nums.length - 2))
+    return Math.max(helper(nums.slice(1, nums.length)), helper(nums.slice(0, nums.length - 1)))
 };
