@@ -14,5 +14,3 @@ var canPlaceFlowers = function (flowerbed, n) {
     }
     return count >= n
 };
-
-canPlaceFlowers([0,0,1,0,1], 0)
