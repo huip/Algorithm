@@ -19,8 +19,10 @@ var multiply = function(num1, num2) {
             res[i+j] += Math.floor(temp / 10)
         }
     }
-    return res
-    
+    while(res.length && res[0] == 0) {
+        res.shift()
+    }
+    return res.join('')
 };
 
-console.log(multiply('124', '2323'))
+multiply('124', '2323')
